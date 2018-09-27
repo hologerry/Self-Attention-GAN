@@ -1,10 +1,5 @@
 import torch
-from torch.optim.optimizer import Optimizer, required
-
-from torch.autograd import Variable
-import torch.nn.functional as F
-from torch import nn
-from torch import Tensor
+import torch.nn as nn
 from torch.nn import Parameter
 
 
@@ -38,9 +33,9 @@ class SpectralNorm(nn.Module):
 
     def _made_params(self):
         try:
-            u = getattr(self.module, self.name + "_u")
-            v = getattr(self.module, self.name + "_v")
-            w = getattr(self.module, self.name + "_bar")
+            getattr(self.module, self.name + "_u")
+            getattr(self.module, self.name + "_v")
+            getattr(self.module, self.name + "_bar")
             return True
         except AttributeError:
             return False

@@ -1,9 +1,8 @@
+import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from torch.autograd import Variable
+
 from spectral import SpectralNorm
-import numpy as np
 
 
 class Self_Attn(nn.Module):

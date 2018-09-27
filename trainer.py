@@ -1,15 +1,14 @@
-
+import datetime
 import os
 import time
-import torch
-import datetime
 
+import torch
 import torch.nn as nn
 from torch.autograd import Variable
 from torchvision.utils import save_image
 
-from sagan_models import Generator, Discriminator
-from utils import tensor2var, denorm
+from sagan_models import Discriminator, Generator
+from utils import denorm, tensor2var
 
 
 class Trainer(object):
