@@ -1,9 +1,9 @@
+from torch.backends import cudnn
 
-from parameter import get_parameters
-from trainer import Trainer
 # from tester import Tester
 from data_loader import Data_Loader
-from torch.backends import cudnn
+from parameter import get_parameters
+from trainer import Trainer
 from utils import make_folder
 
 

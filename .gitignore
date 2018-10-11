@@ -1,0 +1,6 @@
+.DS_Store
+*.pyc
+*.flake8
+logs/
+*/**/__pycache__
+data/
