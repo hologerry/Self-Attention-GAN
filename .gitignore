@@ -3,4 +3,7 @@
 *.flake8
 logs/
 */**/__pycache__
-data/
+data/*
+samples/*
+models/*
+tmp.txt
