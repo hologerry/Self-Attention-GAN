@@ -21,6 +21,10 @@ class SpectralNorm(nn.Module):
         v = getattr(self.module, self.name + "_v")
         w = getattr(self.module, self.name + "_bar")
 
+        print("u size", u.size())
+        print("v size", v.size())
+        print("w size", w.size())
+
         height = w.data.shape[0]
         for _ in range(self.power_iterations):
             v.data = l2normalize(
